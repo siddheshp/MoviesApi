@@ -23,7 +23,7 @@ namespace MoviesApi.Data
 
         public IEnumerable<Movie> GetMovies()
         {
-            return context.Movies;
+            return context.Movies.ToList();
         }
     }
 }
